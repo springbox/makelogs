@@ -10,7 +10,7 @@ var optimist = require('optimist')
     count: {
       alias: 'c',
       type: 'number',
-      default: 14000,
+      default: 100,
       describe: 'Total event that will be created, accepts expressions like "1m" for 1 million (b,m,t,h)'
     },
     days: {
