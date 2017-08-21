@@ -115,8 +115,6 @@ module.exports = function RandomEvent(indexPrefix) {
     event.metadata.controllerSerialNumber = serialNumbers[_.random(0, 2)];
 
     let eventType =_.random(0,16);
-    console.log('event type of: ', eventType);
-
 
     switch (eventType) {
         case 0:
