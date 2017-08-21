@@ -10,8 +10,7 @@ var randomEvent = require('./_randomEvent');
 var samples = require('./samples');
 var eventBuffer = require('./eventBuffer');
 var createIndex = require('./_createIndex');
-// var argv = require('./argv');
-var argv = process.argv;
+var argv = require('./argv');
 
 var total = argv.total;
 var startingMoment = argv.start;

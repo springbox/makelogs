@@ -111,6 +111,9 @@ argv.end = moments[1];
 // parsing allows short notation like "10m" or "1b"
 argv.total = require('./_parseCount')(argv);
 
+if (process.argv.url) {
+    argv.url = process.argv.url;
+}
 
 // since logging is based on the verbose command line flag??
 argv.log = argv.verbose ? _.bind(console.log, console) : _.noop;
