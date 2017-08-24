@@ -11,6 +11,7 @@ var NoConnections = elasticsearch.errors.NoConnections;
 var RequestTimeout = elasticsearch.errors.RequestTimeout;
 
 var url = argv.url;
+var host = url;
 if (!url) {
   var host = String(argv.host);
   var proto = _.contains(host, '//') ? '' : '//';
